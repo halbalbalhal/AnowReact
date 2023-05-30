@@ -11,6 +11,7 @@ import "./Newsswiper.css";
 // import required modules
 import { Pagination } from "swiper";
 
+
 class Swipernews extends React.Component {
     render() {
         return (
