@@ -25,7 +25,7 @@ class Swipernews extends React.Component {
                 >
                     <SwiperSlide>
                         <div className="news__block">
-                            <img src="images/mounts.svg" />
+                            <img src="images/mounts.svg" alt="image didn't find" />
                                 <div className="news__block-filters">
                                     <span className="news__link">lifestyle</span>
                                     <span className="news__link">design</span>
