@@ -7,7 +7,7 @@ class Nav extends React.Component {
     constructor(props) {
         super(props)
         this.showBurger = this.showBurger.bind(this)
-        this.changeColor = this.changeColor(this)
+        this.changeColor = this.changeColor.bind(this)
     }
     showBurger() {
         const burger = document.querySelector('.burger__menu')
