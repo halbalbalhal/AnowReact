@@ -11,6 +11,19 @@
     height: 75px;
 }
 
+.black {
+    transition: all 0.3s ease-in;
+    background-color: var(--dark-black);
+}
+
+.black a {
+    color: var(--white);
+}
+
+.black span {
+    color: var(--white);
+}
+
 .nav__wrapper {
     width: 1153px;
     display: flex;

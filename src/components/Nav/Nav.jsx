@@ -5,8 +5,9 @@ import '../BurgerMenu/Burger'
 class Nav extends React.Component {
 
     constructor(props) {
-        super(props);
+        super(props)
         this.showBurger = this.showBurger.bind(this)
+        this.changeColor = this.changeColor(this)
     }
     showBurger() {
         const burger = document.querySelector('.burger__menu')
@@ -14,10 +15,16 @@ class Nav extends React.Component {
         const burgerButton = document.querySelector('.nav__burger')
         burgerButton.style.display = 'none'
     }
+    changeColor() {
+        window.addEventListener("scroll", function() { 
+            let header = document.querySelector("nav");
+            header.classList.toggle("black", window.scrollY > 0);
+        })
+    }
 
     render() {
         return (
-            <nav className="nav">
+            <nav className="nav" onScroll={this.changeColor}>
                 <div className="nav__wrapper">
                     <span className="nav__title">ANOW</span>
                     <div className="nav__menu">
