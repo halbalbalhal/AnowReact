@@ -15,11 +15,13 @@ class Nav extends React.Component {
         const burgerButton = document.querySelector('.nav__burger')
         burgerButton.style.display = 'none'
     }
-    changeColor() {
+
+    changeColor(props) {
         window.addEventListener("scroll", function() { 
-            let header = document.querySelector("nav");
-            header.classList.toggle("black", window.scrollY > 0);
-        })
+            let header = document.querySelector("nav")
+            header.classList.toggle("black", window.scrollY > 0)
+    })
+
     }
 
     render() {
